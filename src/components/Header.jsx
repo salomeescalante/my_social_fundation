@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './styles/Header.css';
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
