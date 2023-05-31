@@ -11,25 +11,25 @@ const Header = () => {
   };
 
   return (
-    <header>
-      <nav className="navbar">
-        <div className="logo">
+    <header className='header'>
+      <nav className="header__nav">
+        <div className="header__logo">
           <Link to="/">Fundación Social</Link>
         </div>
         <ul className={`menu ${isOpen ? "open" : ""}`}>
-          <li className="menu-item" onClick={handleHamburgerClick}>
+          <li className="header__nav-item" onClick={handleHamburgerClick}>
             <Link to="/nosotros">Nosotros</Link>
           </li>
-          <li className="menu-item" onClick={handleHamburgerClick}>
+          <li className="header__nav-item" onClick={handleHamburgerClick}>
             <Link to="/aliados">Aliados</Link>
           </li>
-          <li className="menu-item" onClick={handleHamburgerClick}>
+          <li className="header__nav-item" onClick={handleHamburgerClick}>
             <Link to="/noticias">Noticias</Link>
           </li>
-          <li className="menu-item" onClick={handleHamburgerClick}>
+          <li className="header__nav-item" onClick={handleHamburgerClick}>
             <Link to="/galeria">Galería</Link>
           </li>
-          <li className="menu-item" onClick={handleHamburgerClick}>
+          <li className="header__nav-item" onClick={handleHamburgerClick}>
             <Link to="/contacto">Contacto</Link>
           </li>
         </ul>
